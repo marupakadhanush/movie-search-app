@@ -1,0 +1,77 @@
+/* src/styles/SearchBar.css */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input,
+.year-input,
+.sort-select {
+    width: 250px;
+    padding: 10px 15px;
+    border: 2px solid #ff6347;
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    color: #333;
+}
+
+.search-input::placeholder,
+.year-input::placeholder {
+    color: #ff6347;
+    opacity: 0.7;
+}
+
+.search-input:focus,
+.year-input:focus,
+.sort-select:focus {
+    border-color: #ff4500;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff6347;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background-color: #ff4500;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filters label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.filters select,
+.filters input {
+    margin-top: 5px;
+}

@@ -1,0 +1,42 @@
+/* src/styles/Navbar.css */
+.navbar {
+    background-color: #ff6347;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-item {
+    margin: 0;
+}
+
+.navbar-link {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+    color: #ff4500;
+}
